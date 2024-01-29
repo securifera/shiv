@@ -1,6 +1,6 @@
 ## What is shiv?
 
-Shiv is a simple, easy-to-use tool designed for performing Windows local, network, & domain enumeration. It also has modules for remotely executing commands on neighboring systems.
+Shiv is a simple, easy-to-use tool designed for performing Windows system, network, & domain enumeration. It also has modules for remotely executing commands on neighboring systems.
 
 ## Why Use shiv?
 
