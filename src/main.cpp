@@ -64,11 +64,11 @@ std::mutex output_mtx;
 
 void usage()
 {
-	printf("Usage: tool.exe [Options...]\n\
+	printf("Usage: shiv.exe [Options...]\n\
 \t-s hosts   \tHosts - can be in comma separated list, ip address, hostname, or ip address range\n\
 \t-p ports   \tPorts - can be in comma separated list, single port, or hyphen seperated range\n\n\
 \t-c command \tCommand - command to execute on remote host or arguments for shellcode binary\n\
-\t-b type    \tExecution Type - WinRM (port 5985) SMB (445)\n\
+\t-b type    \tExecution Type - WinRM (port 5985), SMB (445), WMI (135)\n\
 \t-f path    \tExecutable Path - The local executable binary (x64) to inject into memory and execute remotely (SMB)\n\n\
 \t-d domain  \tDomain - domain for remote authentication or domain controller for AD functions\n\
 \t-u user    \tUser - username for remote command (i.e. joe, joe@DOMAIN) \n\
@@ -90,7 +90,7 @@ void usage()
 \t-h         \tHelp - print this help message\n\
 ");
 
-	printf("\nExample: tool.exe -s 172.16.4.0/27,172.16.0.1 -p 135,443,500-800 -t 2\n\n");
+	printf("\nExample: shiv.exe -s 172.16.4.0/27,172.16.0.1 -p 135,443,500-800 -t 2\n\n");
 }
 /**
  * translate_iprange - takes an ip range in the form of 127.0.0.1/24 notation
