@@ -82,7 +82,7 @@ PID,PPID,Session Id,Username,Arch,Binary Name,Binary Path,Service Name,Open Port
 ### 3. Execute command using WMI
 
 ```
-shiv -s 127.0.0.1 -p135 -b wmi -c whoami
+shiv -s 192.168.162.145 -p135 -b wmi -c whoami
 ```
 ```
 [+] Scanning hosts:
