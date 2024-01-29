@@ -1,10 +1,8 @@
-# Shiv: Basic Windows Enumeration & Remote Execution Tool
-
-## What is Shiv?
+## What is shiv?
 
 Shiv is a simple, easy-to-use tool designed for performing Windows local, network, & domain enumeration. It also has modules for remotely executing commands on neighboring systems.
 
-## Why Use Shiv?
+## Why Use shiv?
 
 - **Evasive**: Allows you to perform basic system, network, and domain enumeration without using built-in tools that could have detection signatures (net, qwinsta, psexec, wmic, systeminfo)
 - **Interactive or Batch Interface**: It can be executed without any commands to behave like an interactive shell or with parameters to execute specific tasks.
@@ -12,7 +10,7 @@ Shiv is a simple, easy-to-use tool designed for performing Windows local, networ
 
 ## Getting Started
 
-To get started with Shiv:
+To get started with shiv:
 
 ```
 Usage: shiv.exe [Options...]
@@ -51,7 +49,8 @@ Example: shiv.exe -s 172.16.4.0/27,172.16.0.1 -p 135,443,500-800 -t 2
 
 ```
 shiv -s 192.168.162.145 -p22,80,135,3389,445
-
+```
+```
 [+] Scanning hosts:
 
 [+] Host: 192.168.162.145 has the following ports open:
@@ -66,6 +65,8 @@ shiv -s 192.168.162.145 -p22,80,135,3389,445
 
 ```
 shiv -y
+```
+```
 PID,PPID,Session Id,Username,Arch,Binary Name,Binary Path,Service Name,Open Ports,Connections
 1116,704,0,LocalSystem,Unknown,svchost.exe,"C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p",NcbService,"","",
 0,0,0,,Unknown,[System Process],"",,"","",
@@ -82,5 +83,13 @@ PID,PPID,Session Id,Username,Arch,Binary Name,Binary Path,Service Name,Open Port
 
 ```
 shiv -s 127.0.0.1 -p135 -b wmi -c whoami
+```
+```
+[+] Scanning hosts:
+
+[+] Host: 127.0.0.1 has the following ports open:
+        [+] Port 135 is open
+
+[+] Scanning finished
 ```
 
