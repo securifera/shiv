@@ -45,7 +45,7 @@ Usage: shiv.exe [Options...]
 Example: shiv.exe -s 172.16.4.0/27,172.16.0.1 -p 135,443,500-800 -t 2
 ```
 
-1. Port scan
+### 1. Port scan
 
 ```
 shiv -s 192.168.162.145 -p22,80,135,3389,445
@@ -61,7 +61,7 @@ shiv -s 192.168.162.145 -p22,80,135,3389,445
 [+] Scanning finished
 ```
 
-2. Get detailed process list (PID, PPID, Privilege, Path, Listening Ports, Service Name )
+### 2. Get detailed process list (PID, PPID, Privilege, Path, Listening Ports, Service Name )
 
 ```
 shiv -y
@@ -79,7 +79,7 @@ PID,PPID,Session Id,Username,Arch,Binary Name,Binary Path,Service Name,Open Port
 ...
 ```
 
-3. Execute command using WMI
+### 3. Execute command using WMI
 
 ```
 shiv -s 127.0.0.1 -p135 -b wmi -c whoami
