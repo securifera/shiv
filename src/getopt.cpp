@@ -2,6 +2,33 @@
 #include <string.h>
 #include "getopt.h"
 
+// 
+// https://www.codeproject.com/info/cpol10.aspx
+// XGetopt.cpp  Version 1.2
+//
+// Author:  Hans Dietrich
+//          hdietrich2@hotmail.com
+//
+// Description:
+//     XGetopt.cpp implements getopt(), a function to parse command lines.
+//
+// History
+//     Version 1.2 - 2003 May 17
+//     - Added Unicode support
+//
+//     Version 1.1 - 2002 March 10
+//     - Added example to XGetopt.cpp module header 
+//
+// This software is released into the public domain.
+// You are free to use it in any way you like.
+//
+// This software is provided "as is" with no expressed
+// or implied warranty.  I accept no liability for any
+// damage or loss of business that this software may cause.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+
 ///////////////////////////////////////////////////////////////////////////////
 //
 //  X G e t o p t . c p p

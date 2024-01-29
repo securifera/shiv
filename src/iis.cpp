@@ -1,3 +1,12 @@
+/*	
+    Slightly modified version of https://github.com/gentilkiwi/mimikatz/blob/0c611b1445b22327fcc7defab2c09b63b4f59804/mimikatz/modules/kuhl_m_iis.c
+
+    Benjamin DELPY `gentilkiwi`
+	https://blog.gentilkiwi.com
+	benjamin@gentilkiwi.com
+	Licence : https://creativecommons.org/licenses/by/4.0/
+*/
+
 #include "iis.h"
 #include "xml.h"
 #include "debug.h"
